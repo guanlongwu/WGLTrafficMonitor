@@ -10,7 +10,7 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 #include <arpa/inet.h>
-#include <ifaddrs.h>#include <ifaddrs.h>
+#include <ifaddrs.h>
 
 typedef struct {
     uint64_t en_in;
