@@ -144,43 +144,43 @@ static wgl_net_interface_counter wgl_get_net_interface_counter() {
     uint64_t speed = 0;     //单位kb/s
     switch (types) {
         case WGLNetworkTrafficTypeWWANSent: {
-            speed = self.wwanTrafficSendBytesPerSecond / 1000;
+            speed = self.wwanTrafficSendBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeWWANReceived: {
-            speed = self.wwanTrafficReceivedBytesPerSecond / 1000;
+            speed = self.wwanTrafficReceivedBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeWIFISent: {
-            speed = self.wifiTrafficSendBytesPerSecond / 1000;
+            speed = self.wifiTrafficSendBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeWIFIReceived: {
-            speed = self.wifiTrafficReceivedBytesPerSecond / 1000;
+            speed = self.wifiTrafficReceivedBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeAWDLSent: {
-            speed = self.awdlTrafficSendBytesPerSecond / 1000;
+            speed = self.awdlTrafficSendBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeAWDLReceived: {
-            speed = self.awdlTrafficReceivedBytesPerSecond / 1000;
+            speed = self.awdlTrafficReceivedBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeWWAN: {
-            speed = self.wwanTrafficBytesPerSecond / 1000;
+            speed = self.wwanTrafficBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeWIFI: {
-            speed = self.wifiTrafficBytesPerSecond / 1000;
+            speed = self.wifiTrafficBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeAWDL: {
-            speed = self.awdlTrafficBytesPerSecond / 1000;
+            speed = self.awdlTrafficBytesPerSecond / 1024;
         }
             break;
         case WGLNetworkTrafficTypeALL: {
-            speed = self.allTrafficBytesPerSecond / 1000;
+            speed = self.allTrafficBytesPerSecond / 1024;
         }
             break;
         default:
