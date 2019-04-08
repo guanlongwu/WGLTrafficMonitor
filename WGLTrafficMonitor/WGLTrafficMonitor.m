@@ -332,6 +332,11 @@ static wgl_net_interface_counter wgl_get_net_interface_counter() {
     
     self.allTrafficForLastSecond = self.allTrafficForCurrent;
     
+    //通知流量有变动
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:WGLNetworkTrafficSpeedDidChangeNotification object:nil];
+    });
+    
 }
 
 #pragma mark - 定时器

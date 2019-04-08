@@ -8,6 +8,8 @@
 
 #import "WGLTrafficCommon.h"
 
+NSString * const WGLNetworkTrafficSpeedDidChangeNotification = @"com.wgl.network.traffic.speed.change";
+
 @implementation WGLTrafficCommon
 
 @end

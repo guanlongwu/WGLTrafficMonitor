@@ -38,6 +38,12 @@ typedef NS_OPTIONS(NSUInteger, WGLNetworkTrafficType) {
     WGLNetworkTrafficTypeAWDL,
 };
 
+/**
+  网络流量速度变化通知
+ */
+FOUNDATION_EXPORT NSString * const WGLNetworkTrafficSpeedDidChangeNotification;
+
+
 @interface WGLTrafficCommon : NSObject
 
 @end
